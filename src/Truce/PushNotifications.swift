@@ -67,16 +67,16 @@ func parseSubscribeMessage(message: WKScriptMessage) -> [SubscribeMessage] {
 func returnPermissionResult(isGranted: Bool){
     DispatchQueue.main.async(execute: {
         if (isGranted){
-            Truce_net.webView.evaluateJavaScript("this.dispatchEvent(new CustomEvent('push-permission-request', { detail: 'granted' }))")
+            Truce_.webView.evaluateJavaScript("this.dispatchEvent(new CustomEvent('push-permission-request', { detail: 'granted' }))")
         }
         else {
-            Truce_net.webView.evaluateJavaScript("this.dispatchEvent(new CustomEvent('push-permission-request', { detail: 'denied' }))")
+            Truce_.webView.evaluateJavaScript("this.dispatchEvent(new CustomEvent('push-permission-request', { detail: 'denied' }))")
         }
     })
 }
 func returnPermissionState(state: String){
     DispatchQueue.main.async(execute: {
-        Truce_net.webView.evaluateJavaScript("this.dispatchEvent(new CustomEvent('push-permission-state', { detail: '\(state)' }))")
+        Truce_.webView.evaluateJavaScript("this.dispatchEvent(new CustomEvent('push-permission-state', { detail: '\(state)' }))")
     })
 }
 
@@ -134,9 +134,9 @@ func handlePushState() {
 }
 
 func checkViewAndEvaluate(event: String, detail: String) {
-    if (!Truce_net.webView.isHidden && !Truce_net.webView.isLoading ) {
+    if (!Truce_.webView.isHidden && !Truce_.webView.isLoading ) {
         DispatchQueue.main.async(execute: {
-            Truce_net.webView.evaluateJavaScript("this.dispatchEvent(new CustomEvent('\(event)', { detail: \(detail) }))")
+            Truce_.webView.evaluateJavaScript("this.dispatchEvent(new CustomEvent('\(event)', { detail: \(detail) }))")
         })
     }
     else {

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CD89F888237E9D9200C436A1"
-               BuildableName = "Truce.net.net.app"
-               BlueprintName = "Truce.net"
-               ReferencedContainer = "container:Truce.net.xcodeproj">
+               BuildableName = "Truce.net.app"
+               BlueprintName = "Truce."
+               ReferencedContainer = "container:Truce..xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CD89F888237E9D9200C436A1"
-            BuildableName = "Truce.net.net.app"
-            BlueprintName = "Truce.net"
-            ReferencedContainer = "container:Truce.net.xcodeproj">
+            BuildableName = "Truce.net.app"
+            BlueprintName = "Truce."
+            ReferencedContainer = "container:Truce..xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CD89F888237E9D9200C436A1"
-            BuildableName = "Truce.net.net.app"
-            BlueprintName = "Truce.net"
-            ReferencedContainer = "container:Truce.net.xcodeproj">
+            BuildableName = "Truce.net.app"
+            BlueprintName = "Truce."
+            ReferencedContainer = "container:Truce..xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

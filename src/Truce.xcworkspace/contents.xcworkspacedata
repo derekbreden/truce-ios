@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/derekbredensteiner/Desktop/truce-ios/src/Truce.net.xcodeproj">
+      location = "group:/Users/derekbredensteiner/Desktop/truce-ios/src/Truce..xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

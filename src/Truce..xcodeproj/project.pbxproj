@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		4C1C2162A8048FDF52B2A9D0 /* Pods-Truce.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Truce.release.xcconfig"; path = "Target Support Files/Pods-Truce/Pods-Truce.release.xcconfig"; sourceTree = "<group>"; };
-		59333BAA25CFF706003392A4 /* Truce.net.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Truce.net.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59333BAA25CFF706003392A4 /* Truce..app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Truce..app; sourceTree = BUILT_PRODUCTS_DIR; };
 		595F239A25CEFBFD0053416C /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Settings.swift; path = Truce/Settings.swift; sourceTree = "<group>"; };
 		595F239B25CEFBFD0053416C /* Entitlements */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Entitlements; path = Truce/Entitlements; sourceTree = "<group>"; };
 		595F239C25CEFBFD0053416C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Truce/Assets.xcassets; sourceTree = "<group>"; };
@@ -89,16 +89,16 @@
 				595F23A425CEFBFE0053416C /* WebView.swift */,
 				30FCACC6A7BF53CD6D9CF6C0 /* Pods */,
 				90E46E861CB86F5FAF46BED9 /* Frameworks */,
-				59333BAA25CFF706003392A4 /* Truce.net.app */,
+				59333BAA25CFF706003392A4 /* Truce..app */,
 			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CD89F888237E9D9200C436A1 /* Truce.net */ = {
+		CD89F888237E9D9200C436A1 /* Truce. */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD89F89D237E9D9300C436A1 /* Build configuration list for PBXNativeTarget "Truce.net" */;
+			buildConfigurationList = CD89F89D237E9D9300C436A1 /* Build configuration list for PBXNativeTarget "Truce." */;
 			buildPhases = (
 				E07DC62CDB59F65280F7057D /* [CP] Check Pods Manifest.lock */,
 				CD89F885237E9D9200C436A1 /* Sources */,
@@ -110,9 +110,9 @@
 			);
 			dependencies = (
 			);
-			name = Truce.net;
+			name = Truce.;
 			productName = Truce;
-			productReference = 59333BAA25CFF706003392A4 /* Truce.net.app */;
+			productReference = 59333BAA25CFF706003392A4 /* Truce..app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -132,7 +132,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CD89F884237E9D9200C436A1 /* Build configuration list for PBXProject "Truce.net" */;
+			buildConfigurationList = CD89F884237E9D9200C436A1 /* Build configuration list for PBXProject "Truce." */;
 			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -145,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CD89F888237E9D9200C436A1 /* Truce.net */,
+				CD89F888237E9D9200C436A1 /* Truce. */,
 			);
 		};
 /* End PBXProject section */
@@ -373,7 +373,7 @@
 				CODE_SIGN_ENTITLEMENTS = Truce/Entitlements/Entitlements.plist;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = T5WDQ2QJCS;
 				INFOPLIST_FILE = Truce/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Truce.net;
@@ -385,7 +385,7 @@
 				);
 				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = net.truce.ios.app;
-				PRODUCT_NAME = Truce.net;
+				PRODUCT_NAME = Truce.;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -405,7 +405,7 @@
 				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_ENTITLEMENTS = Truce/Entitlements/Entitlements.plist;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = T5WDQ2QJCS;
 				INFOPLIST_FILE = Truce/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Truce.net;
@@ -417,7 +417,7 @@
 				);
 				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = net.truce.ios.app;
-				PRODUCT_NAME = Truce.net;
+				PRODUCT_NAME = Truce.;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -431,7 +431,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CD89F884237E9D9200C436A1 /* Build configuration list for PBXProject "Truce.net" */ = {
+		CD89F884237E9D9200C436A1 /* Build configuration list for PBXProject "Truce." */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD89F89B237E9D9300C436A1 /* Debug */,
@@ -440,7 +440,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CD89F89D237E9D9300C436A1 /* Build configuration list for PBXNativeTarget "Truce.net" */ = {
+		CD89F89D237E9D9300C436A1 /* Build configuration list for PBXNativeTarget "Truce." */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD89F89E237E9D9300C436A1 /* Debug */,
