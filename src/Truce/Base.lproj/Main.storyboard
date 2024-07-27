@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,19 +12,21 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Truce" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Truce_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="PHY-vp-dMl" userLabel="Webview View">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PHY-vp-dMl" userLabel="Webview View">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p0s-Fg-eGP" userLabel="Splash Background">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p0s-Fg-eGP" userLabel="Splash Background">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XkE-87-jZW">
+                                                <rect key="frame" x="195" y="0.0" width="195" height="844"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DIO-mU-n27" userLabel="Loading View">
                                                 <rect key="frame" x="95" y="322" width="200" height="200"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -51,12 +53,31 @@
                                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                             </view>
                                         </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="XkE-87-jZW" firstAttribute="centerX" secondItem="p0s-Fg-eGP" secondAttribute="centerX" multiplier="3:2" id="8ek-c6-UiF"/>
+                                            <constraint firstItem="XkE-87-jZW" firstAttribute="width" secondItem="p0s-Fg-eGP" secondAttribute="width" multiplier="1:2" id="NzD-dI-gYc"/>
+                                            <constraint firstItem="XkE-87-jZW" firstAttribute="centerY" secondItem="p0s-Fg-eGP" secondAttribute="centerY" id="OC3-Vi-y0Q"/>
+                                            <constraint firstItem="XkE-87-jZW" firstAttribute="height" secondItem="p0s-Fg-eGP" secondAttribute="height" id="YL0-WE-bQH"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="p0s-Fg-eGP" firstAttribute="width" secondItem="PHY-vp-dMl" secondAttribute="width" id="81b-rA-vmt"/>
+                                    <constraint firstItem="p0s-Fg-eGP" firstAttribute="height" secondItem="PHY-vp-dMl" secondAttribute="height" id="975-dZ-ROo"/>
+                                    <constraint firstItem="p0s-Fg-eGP" firstAttribute="centerY" secondItem="PHY-vp-dMl" secondAttribute="centerY" id="Hd2-4T-eGH"/>
+                                    <constraint firstItem="p0s-Fg-eGP" firstAttribute="centerX" secondItem="PHY-vp-dMl" secondAttribute="centerX" id="WKb-wW-FDl"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PHY-vp-dMl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TaB-xe-iZy"/>
+                            <constraint firstItem="PHY-vp-dMl" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="VnV-cg-FX8"/>
+                            <constraint firstItem="PHY-vp-dMl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sTO-ha-eBd"/>
+                            <constraint firstItem="PHY-vp-dMl" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="t77-GZ-k5l"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="connectionProblemView" destination="TpV-I7-c6z" id="76F-WR-UnJ"/>
@@ -71,13 +92,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchIcon" width="64" height="64"/>
-        <image name="wifi.slash" catalog="system" width="128" height="102"/>
+        <image name="LaunchIcon" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="wifi.slash" catalog="system" width="128" height="111"/>
         <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="secondarySystemFillColor">
-            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
