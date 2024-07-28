@@ -373,7 +373,7 @@
 				CODE_SIGN_ENTITLEMENTS = Truce/Entitlements/Entitlements.plist;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = T5WDQ2QJCS;
 				INFOPLIST_FILE = Truce/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Truce.net;
@@ -405,7 +405,7 @@
 				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_ENTITLEMENTS = Truce/Entitlements/Entitlements.plist;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = T5WDQ2QJCS;
 				INFOPLIST_FILE = Truce/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Truce.net;

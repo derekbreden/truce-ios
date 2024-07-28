@@ -17,19 +17,6 @@ class ViewController: UIViewController, WKNavigationDelegate, UIDocumentInteract
     var toolbarView: UIToolbar!
     
     var htmlIsLoaded = false;
-    
-    private var themeObservation: NSKeyValueObservation?
-    var currentWebViewTheme: UIUserInterfaceStyle = .unspecified
-    override var preferredStatusBarStyle : UIStatusBarStyle {
-        if #available(iOS 13, *), overrideStatusBar{
-            if #available(iOS 15, *) {
-                return .default
-            } else {
-                return statusBarTheme == "dark" ? .lightContent : .darkContent
-            }
-        }
-        return .default
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,13 +51,6 @@ class ViewController: UIViewController, WKNavigationDelegate, UIDocumentInteract
             Truce_.webView.scrollView.addSubview(refreshControl)
             Truce_.webView.scrollView.bounces = true
         }
-
-        if #available(iOS 15.0, *), adaptiveUIStyle {
-            themeObservation = Truce_.webView.observe(\.underPageBackgroundColor) { [unowned self] webView, _ in
-                currentWebViewTheme = Truce_.webView.underPageBackgroundColor.isLight() ?? true ? .light : .dark
-                self.overrideUIStyle()
-            }
-        }
     }
 
     @objc func refreshWebView(_ sender: UIRefreshControl) {
@@ -102,19 +82,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UIDocumentInteract
         
         return toolbarView
     }
-    
-    func overrideUIStyle(toDefault: Bool = false) {
-        if #available(iOS 15.0, *), adaptiveUIStyle {
-            if (((htmlIsLoaded && !Truce_.webView.isHidden) || toDefault) && self.currentWebViewTheme != .unspecified) {
-                UIApplication
-                    .shared
-                    .connectedScenes
-                    .flatMap { ($0 as? UIWindowScene)?.windows ?? [] }
-                    .first { $0.isKeyWindow }?.overrideUserInterfaceStyle = toDefault ? .unspecified : self.currentWebViewTheme;
-            }
-        }
-    }
-    
+
     func initToolbarView() {
         toolbarView =  createToolbarView()
         
@@ -136,8 +104,6 @@ class ViewController: UIViewController, WKNavigationDelegate, UIDocumentInteract
             self.loadingView.isHidden = true
            
             self.setProgress(0.0, false)
-            
-            self.overrideUIStyle()
         }
     }
     
@@ -145,7 +111,6 @@ class ViewController: UIViewController, WKNavigationDelegate, UIDocumentInteract
         htmlIsLoaded = false;
         
         if (error as NSError)._code != (-999) {
-            self.overrideUIStyle(toDefault: true);
 
             webView.isHidden = true;
             loadingView.isHidden = false;

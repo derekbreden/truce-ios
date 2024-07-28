@@ -25,5 +25,4 @@ let platformCookie = Cookie(name: "app-platform", value: "iOS App Store")
 let displayMode = "standalone" // standalone / fullscreen.
 let adaptiveUIStyle = true     // iOS 15+ only. Change app theme on the fly to dark/light related to WebView background color.
 let overrideStatusBar = false   // iOS 13-14 only. if you don't support dark/light system theme.
-let statusBarTheme = "light"    // dark / light, related to override option.
 let pullToRefresh = true    // Enable/disable pull down to refresh page
