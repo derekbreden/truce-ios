@@ -31,6 +31,17 @@ class ViewController: UIViewController, WKNavigationDelegate, UIDocumentInteract
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         Truce_.webView.frame = calcWebviewFrame(webviewView: webviewView, toolbarView: nil)
+
+        // Prevent status bar from being overridden if not on ios 17.0+
+        if #available(iOS 17.0, *) {
+        } else {
+            // Just to document that windowScene.statusBarManager is ios 13.0 + feature
+            if #available(iOS 13.0, *) {
+                var statusBarHeight = self.webviewView.window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
+                let newFrame = CGRect(x: 0, y: statusBarHeight, width: self.view.bounds.width, height: self.view.bounds.height - statusBarHeight)
+                self.webviewView.frame = newFrame
+            }
+        }
     }
     
     @objc func keyboardWillHide(_ notification: NSNotification) {
