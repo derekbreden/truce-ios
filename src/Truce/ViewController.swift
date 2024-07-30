@@ -37,7 +37,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UIDocumentInteract
         } else {
             // Just to document that windowScene.statusBarManager is ios 13.0 + feature
             if #available(iOS 13.0, *) {
-                var statusBarHeight = self.webviewView.window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
+                let statusBarHeight = self.webviewView.window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
                 let newFrame = CGRect(x: 0, y: statusBarHeight, width: self.view.bounds.width, height: self.view.bounds.height - statusBarHeight)
                 self.webviewView.frame = newFrame
             }
