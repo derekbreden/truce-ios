@@ -373,7 +373,7 @@
 				CODE_SIGN_ENTITLEMENTS = Truce/Entitlements/Entitlements.plist;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = T5WDQ2QJCS;
 				INFOPLIST_FILE = Truce/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Truce.net;
@@ -383,7 +383,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2;
+				MARKETING_VERSION = 3;
 				PRODUCT_BUNDLE_IDENTIFIER = net.truce.ios.app;
 				PRODUCT_NAME = Truce.;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -405,7 +405,7 @@
 				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_ENTITLEMENTS = Truce/Entitlements/Entitlements.plist;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = T5WDQ2QJCS;
 				INFOPLIST_FILE = Truce/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Truce.net;
@@ -415,7 +415,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2;
+				MARKETING_VERSION = 3;
 				PRODUCT_BUNDLE_IDENTIFIER = net.truce.ios.app;
 				PRODUCT_NAME = Truce.;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
